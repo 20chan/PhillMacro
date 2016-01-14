@@ -20,6 +20,12 @@ namespace PhillMacro
         {
             InitializeComponent();
             KeyboardHook.KeyEvented += KeyboardHook_KeyEvented;
+            KeyboardHook.HookStart();
+        }
+
+        ~Form1()
+        {
+            KeyboardHook.HookEnd();
         }
 
         private void KeyboardHook_KeyEvented(Keys key, KeyEventType type)
@@ -37,6 +43,7 @@ namespace PhillMacro
                 }
             }
 
+            if (!isStart) return;
             KeyEvents.Add(new KeyEvent(elapsed, key, type));
 
             if (type == KeyEventType.DOWN) this.tbText.AppendText(key.ToString() + " ");
@@ -45,7 +52,6 @@ namespace PhillMacro
         private void Start()
         {
             if (isStart) return;
-            KeyboardHook.HookStart();
             isStart = true;
             timer1.Start();
         }
@@ -53,7 +59,6 @@ namespace PhillMacro
         private void Stop()
         {
             if (!isStart) return;
-            KeyboardHook.HookEnd();
             isStart = false;
             timer1.Stop();
         }
@@ -71,6 +76,7 @@ namespace PhillMacro
         private void btnClear_Click(object sender, EventArgs e)
         {
             this.tbText.Clear();
+            KeyEvents.Clear();
         }
 
         private void tbText_KeyPress(object sender, KeyPressEventArgs e)
