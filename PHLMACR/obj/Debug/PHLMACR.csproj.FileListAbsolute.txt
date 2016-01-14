@@ -1,0 +1,4 @@
+N:\C#\PhillMacro\PHLMACR\bin\Debug\PHLMACR.dll
+N:\C#\PhillMacro\PHLMACR\bin\Debug\PHLMACR.pdb
+N:\C#\PhillMacro\PHLMACR\obj\Debug\PHLMACR.dll
+N:\C#\PhillMacro\PHLMACR\obj\Debug\PHLMACR.pdb

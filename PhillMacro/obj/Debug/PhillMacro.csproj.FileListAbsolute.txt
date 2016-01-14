@@ -1,0 +1,11 @@
+N:\C#\PhillMacro\PhillMacro\bin\Debug\PhillMacro.exe.config
+N:\C#\PhillMacro\PhillMacro\obj\Debug\PhillMacro.csprojResolveAssemblyReference.cache
+N:\C#\PhillMacro\PhillMacro\obj\Debug\PhillMacro.Properties.Resources.resources
+N:\C#\PhillMacro\PhillMacro\obj\Debug\PhillMacro.csproj.GenerateResource.Cache
+N:\C#\PhillMacro\PhillMacro\bin\Debug\PhillMacro.exe
+N:\C#\PhillMacro\PhillMacro\bin\Debug\PhillMacro.pdb
+N:\C#\PhillMacro\PhillMacro\bin\Debug\PHLMACR.dll
+N:\C#\PhillMacro\PhillMacro\bin\Debug\PHLMACR.pdb
+N:\C#\PhillMacro\PhillMacro\obj\Debug\PhillMacro.exe
+N:\C#\PhillMacro\PhillMacro\obj\Debug\PhillMacro.pdb
+N:\C#\PhillMacro\PhillMacro\obj\Debug\PhillMacro.Form1.resources
