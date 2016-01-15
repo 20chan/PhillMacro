@@ -30,24 +30,15 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.btnStart = new System.Windows.Forms.Button();
             this.btnStop = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.tbText = new System.Windows.Forms.TextBox();
             this.btnHide = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.btnPlay = new System.Windows.Forms.Button();
+            this.btnStart = new System.Windows.Forms.Button();
+            this.btnEdit = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // btnStart
-            // 
-            this.btnStart.Location = new System.Drawing.Point(12, 12);
-            this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(75, 23);
-            this.btnStart.TabIndex = 0;
-            this.btnStart.Text = "녹화 시작";
-            this.btnStart.UseVisualStyleBackColor = true;
-            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // btnStop
             // 
@@ -81,9 +72,9 @@
             // 
             // btnHide
             // 
-            this.btnHide.Location = new System.Drawing.Point(12, 247);
+            this.btnHide.Location = new System.Drawing.Point(93, 247);
             this.btnHide.Name = "btnHide";
-            this.btnHide.Size = new System.Drawing.Size(318, 23);
+            this.btnHide.Size = new System.Drawing.Size(237, 23);
             this.btnHide.TabIndex = 4;
             this.btnHide.Text = "숨기기 F9, 다시 보이기 Shift F9";
             this.btnHide.UseVisualStyleBackColor = true;
@@ -102,11 +93,31 @@
             this.btnPlay.UseVisualStyleBackColor = true;
             this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
             // 
+            // btnStart
+            // 
+            this.btnStart.Location = new System.Drawing.Point(12, 12);
+            this.btnStart.Name = "btnStart";
+            this.btnStart.Size = new System.Drawing.Size(75, 23);
+            this.btnStart.TabIndex = 0;
+            this.btnStart.Text = "녹화 시작";
+            this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
+            // 
+            // btnEdit
+            // 
+            this.btnEdit.Location = new System.Drawing.Point(12, 247);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(75, 23);
+            this.btnEdit.TabIndex = 6;
+            this.btnEdit.Text = "편집";
+            this.btnEdit.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(340, 279);
+            this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnPlay);
             this.Controls.Add(this.btnHide);
             this.Controls.Add(this.tbText);
@@ -124,14 +135,14 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Button btnStop;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.TextBox tbText;
         private System.Windows.Forms.Button btnHide;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Button btnPlay;
+        private System.Windows.Forms.Button btnStart;
+        private System.Windows.Forms.Button btnEdit;
     }
 }
 
