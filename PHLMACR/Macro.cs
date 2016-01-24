@@ -18,5 +18,10 @@ namespace PHLMACR
                 System.Threading.Thread.Sleep(10);
             }
         }
+
+        public void Save()
+        {
+            throw new NotImplementedException(); // 이거 구현 해야
+        }
     }
 }
