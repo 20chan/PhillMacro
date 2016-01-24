@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PhillMacro
 {
-    public partial class fEdit : Form
+    public partial class MacroForm : Form
     {
-        public fEdit()
+        public MacroForm()
         {
             InitializeComponent();
         }

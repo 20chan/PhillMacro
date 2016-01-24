@@ -11,7 +11,10 @@ namespace PHLMACR
 {
     public enum KeyEventType
     {
-        DOWN, UP
+        [StringValue("다운")]
+        DOWN,
+        [StringValue("업")]
+        UP
     }
     public class KeyboardHook
     {

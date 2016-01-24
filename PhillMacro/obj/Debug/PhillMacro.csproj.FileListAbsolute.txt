@@ -9,3 +9,4 @@ N:\C#\PhillMacro\PhillMacro\bin\Debug\PHLMACR.pdb
 N:\C#\PhillMacro\PhillMacro\obj\Debug\PhillMacro.exe
 N:\C#\PhillMacro\PhillMacro\obj\Debug\PhillMacro.pdb
 N:\C#\PhillMacro\PhillMacro\obj\Debug\PhillMacro.Form1.resources
+N:\C#\PhillMacro\PhillMacro\obj\Debug\PhillMacro.main.resources

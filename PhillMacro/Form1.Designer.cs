@@ -38,6 +38,7 @@
             this.btnPlay = new System.Windows.Forms.Button();
             this.btnStart = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
+            this.wbAds = new System.Windows.Forms.WebBrowser();
             this.SuspendLayout();
             // 
             // btnStop
@@ -112,11 +113,21 @@
             this.btnEdit.Text = "편집";
             this.btnEdit.UseVisualStyleBackColor = true;
             // 
+            // wbAds
+            // 
+            this.wbAds.Location = new System.Drawing.Point(12, 276);
+            this.wbAds.MinimumSize = new System.Drawing.Size(20, 20);
+            this.wbAds.Name = "wbAds";
+            this.wbAds.Size = new System.Drawing.Size(316, 71);
+            this.wbAds.TabIndex = 7;
+            this.wbAds.Url = new System.Uri("http://phillyai.dothome.co.kr", System.UriKind.Absolute);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(340, 279);
+            this.ClientSize = new System.Drawing.Size(340, 359);
+            this.Controls.Add(this.wbAds);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnPlay);
             this.Controls.Add(this.btnHide);
@@ -143,6 +154,7 @@
         private System.Windows.Forms.Button btnPlay;
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Button btnEdit;
+        private System.Windows.Forms.WebBrowser wbAds;
     }
 }
 

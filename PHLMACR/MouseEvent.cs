@@ -11,6 +11,13 @@ namespace PHLMACR
     {
         public MouseEventType MouseEventType { get; set; }
         public Point Point { get; set; }
+        public override string Description
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+        }
 
         public MouseEvent(uint elapsed, Point point) : base(EventType.MOUSEEVENT, elapsed)
         {

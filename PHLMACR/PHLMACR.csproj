@@ -42,11 +42,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomKey.cs" />
     <Compile Include="Event.cs" />
     <Compile Include="EventManager.cs" />
     <Compile Include="EventType.cs" />
     <Compile Include="Hook.cs" />
     <Compile Include="KeyEvent.cs" />
+    <Compile Include="Macro.cs" />
     <Compile Include="MouseEvent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

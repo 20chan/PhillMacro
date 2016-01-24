@@ -10,6 +10,7 @@ namespace PHLMACR
     {
         public EventType EventType { get; set; } = EventType.NONE;
         public uint ElapsedTick { get; set; } = 0;
+        public abstract string Description { get; } = "";
 
         public Event(EventType type, uint elapsed)
         {
