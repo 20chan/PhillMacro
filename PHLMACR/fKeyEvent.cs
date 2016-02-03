@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PhillMacro
+namespace PHLMACR
 {
-    public partial class fEvent : Form
+    public partial class fKeyEvent : Form
     {
-        public fEvent()
+        public fKeyEvent()
         {
             InitializeComponent();
         }

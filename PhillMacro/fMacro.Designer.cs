@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.Button btnEdit;
             this.lvEvents = new System.Windows.Forms.ListView();
             this.Time = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -36,7 +37,11 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.cmsEventType = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.키보드이벤트ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.마우스이벤트ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             btnEdit = new System.Windows.Forms.Button();
+            this.cmsEventType.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnEdit
@@ -86,6 +91,7 @@
             this.btnAdd.TabIndex = 1;
             this.btnAdd.Text = "이벤트 추가";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnDelete
             // 
@@ -105,6 +111,28 @@
             this.button1.Text = "저장 및 닫기";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // cmsEventType
+            // 
+            this.cmsEventType.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.키보드이벤트ToolStripMenuItem,
+            this.마우스이벤트ToolStripMenuItem});
+            this.cmsEventType.Name = "cmsEventType";
+            this.cmsEventType.Size = new System.Drawing.Size(153, 70);
+            // 
+            // 키보드이벤트ToolStripMenuItem
+            // 
+            this.키보드이벤트ToolStripMenuItem.Name = "키보드이벤트ToolStripMenuItem";
+            this.키보드이벤트ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.키보드이벤트ToolStripMenuItem.Text = "키보드 이벤트";
+            this.키보드이벤트ToolStripMenuItem.Click += new System.EventHandler(this.키보드이벤트ToolStripMenuItem_Click);
+            // 
+            // 마우스이벤트ToolStripMenuItem
+            // 
+            this.마우스이벤트ToolStripMenuItem.Name = "마우스이벤트ToolStripMenuItem";
+            this.마우스이벤트ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.마우스이벤트ToolStripMenuItem.Text = "마우스 이벤트";
+            this.마우스이벤트ToolStripMenuItem.Click += new System.EventHandler(this.마우스이벤트ToolStripMenuItem_Click);
+            // 
             // fMacro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -121,6 +149,7 @@
             this.Name = "fMacro";
             this.ShowInTaskbar = false;
             this.Text = "매크로";
+            this.cmsEventType.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -134,5 +163,8 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ContextMenuStrip cmsEventType;
+        private System.Windows.Forms.ToolStripMenuItem 키보드이벤트ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 마우스이벤트ToolStripMenuItem;
     }
 }

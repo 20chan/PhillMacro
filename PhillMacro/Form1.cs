@@ -27,7 +27,7 @@ namespace PhillMacro
         {
             KeyboardHook.HookEnd();
         }
-
+        
         private void KeyboardHook_KeyEvented(Keys key, KeyEventType type)
         {
             if (key == Keys.F9 && Control.ModifierKeys != Keys.Shift && type == KeyEventType.DOWN) // F9를 눌렀을 때
@@ -46,7 +46,8 @@ namespace PhillMacro
             if (!isStart) return;
             KeyEvents.Add(new KeyEvent(elapsed, key, type));
 
-            if (type == KeyEventType.DOWN) this.tbText.AppendText(key.ToString() + " ");
+            //if (type == KeyEventType.DOWN)
+                this.tbText.AppendText(key.ToString() + " ");
         }
 
         private void Start()
@@ -101,6 +102,12 @@ namespace PhillMacro
                 KeyboardHook.MakeKeyEvent(k.Key, k.KeyEventType);
                 System.Threading.Thread.Sleep(100);
             }
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            fMacro f = new fMacro(new Macro());
+            f.Show();
         }
     }
 }

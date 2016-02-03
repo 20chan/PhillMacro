@@ -27,5 +27,22 @@ namespace PhillMacro
                 this.lvEvents.Items.Add(i);
             }
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            cmsEventType.Show(Cursor.Position);
+        }
+
+        private void 키보드이벤트ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fKeyEvent key = new fKeyEvent();
+            key.ShowDialog();
+        }
+
+        private void 마우스이벤트ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fMouseEvent mouse = new fMouseEvent();
+            mouse.ShowDialog();
+        }
     }
 }
