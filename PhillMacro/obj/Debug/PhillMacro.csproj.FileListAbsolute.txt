@@ -11,3 +11,4 @@ N:\C#\PhillMacro\PhillMacro\obj\Debug\PhillMacro.pdb
 N:\C#\PhillMacro\PhillMacro\obj\Debug\PhillMacro.Form1.resources
 N:\C#\PhillMacro\PhillMacro\obj\Debug\PhillMacro.main.resources
 N:\C#\PhillMacro\PhillMacro\obj\Debug\PhillMacro.fMacro.resources
+N:\C#\PhillMacro\PhillMacro\obj\Debug\PhillMacro.CSGOBHOP.resources

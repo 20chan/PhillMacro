@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using PHLMACR;
+using PHLMACR.Events;
 
 namespace PhillMacro
 {
@@ -107,7 +108,7 @@ namespace PhillMacro
         private void btnEdit_Click(object sender, EventArgs e)
         {
             fMacro f = new fMacro(new Macro());
-            f.Show();
+            f.ShowDialog();
         }
     }
 }

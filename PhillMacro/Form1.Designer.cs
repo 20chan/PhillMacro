@@ -121,7 +121,7 @@
             this.wbAds.Name = "wbAds";
             this.wbAds.Size = new System.Drawing.Size(316, 71);
             this.wbAds.TabIndex = 7;
-            this.wbAds.Url = new System.Uri("http://phillyai.dothome.co.kr", System.UriKind.Absolute);
+            this.wbAds.Url = new System.Uri("http://philly.dothome.co.kr", System.UriKind.Absolute);
             // 
             // Form1
             // 

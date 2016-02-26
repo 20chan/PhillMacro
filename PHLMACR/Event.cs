@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace PHLMACR
 {
+    public delegate void EventFormProc(Event e, bool isClosing);
     public abstract class Event
     {
         public EventType EventType { get; set; } = EventType.NONE;

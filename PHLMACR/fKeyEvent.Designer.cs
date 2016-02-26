@@ -52,6 +52,8 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(201, 23);
             this.textBox1.TabIndex = 4;
+            this.textBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyDown);
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // btnOk
             // 
@@ -61,6 +63,7 @@
             this.btnOk.TabIndex = 8;
             this.btnOk.Text = "완료";
             this.btnOk.UseVisualStyleBackColor = true;
+            this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
             // 
             // btnCancle
             // 
@@ -70,6 +73,7 @@
             this.btnCancle.TabIndex = 9;
             this.btnCancle.Text = "취소";
             this.btnCancle.UseVisualStyleBackColor = true;
+            this.btnCancle.Click += new System.EventHandler(this.btnCancle_Click);
             // 
             // rbDown
             // 
@@ -117,9 +121,10 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "fKeyEvent";
-            this.Text = "fKeyEvent";
+            this.Text = "키이벤트";
             this.ResumeLayout(false);
             this.PerformLayout();
 

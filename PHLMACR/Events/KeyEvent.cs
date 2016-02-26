@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PHLMACR
+namespace PHLMACR.Events
 {
     public class KeyEvent : Event
     {
@@ -15,7 +15,7 @@ namespace PHLMACR
         {
             get
             {
-                return Key.ToString() + "키 " + ((KeyEventType == KeyEventType.DOWN) ? "누르기" : "떼기");
+                return Key.ToString() + "키 " + StringValue.GetStringValue(KeyEventType);
             }
         }
 

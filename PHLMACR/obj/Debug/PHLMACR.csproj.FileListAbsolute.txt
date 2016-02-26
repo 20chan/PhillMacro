@@ -2,7 +2,7 @@ N:\C#\PhillMacro\PHLMACR\bin\Debug\PHLMACR.dll
 N:\C#\PhillMacro\PHLMACR\bin\Debug\PHLMACR.pdb
 N:\C#\PhillMacro\PHLMACR\obj\Debug\PHLMACR.dll
 N:\C#\PhillMacro\PHLMACR\obj\Debug\PHLMACR.pdb
-N:\C#\PhillMacro\PHLMACR\obj\Debug\PHLMACR.csprojResolveAssemblyReference.cache
 N:\C#\PhillMacro\PHLMACR\obj\Debug\PHLMACR.fKeyEvent.resources
 N:\C#\PhillMacro\PHLMACR\obj\Debug\PHLMACR.csproj.GenerateResource.Cache
 N:\C#\PhillMacro\PHLMACR\obj\Debug\PHLMACR.fMouseEvent.resources
+N:\C#\PhillMacro\PHLMACR\obj\Debug\PHLMACR.csprojResolveAssemblyReference.cache

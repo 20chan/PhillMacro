@@ -29,19 +29,23 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.lbMousePos = new System.Windows.Forms.Label();
+            this.lbX = new System.Windows.Forms.Label();
+            this.lbY = new System.Windows.Forms.Label();
+            this.tbX = new System.Windows.Forms.TextBox();
+            this.tbY = new System.Windows.Forms.TextBox();
+            this.btnCurrentPos = new System.Windows.Forms.Button();
+            this.rbLeft = new System.Windows.Forms.RadioButton();
+            this.rbRight = new System.Windows.Forms.RadioButton();
+            this.rbDown = new System.Windows.Forms.RadioButton();
+            this.rbUp = new System.Windows.Forms.RadioButton();
+            this.rbClick = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rbWheel = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.rbMove = new System.Windows.Forms.RadioButton();
+            this.rbScrollUp = new System.Windows.Forms.RadioButton();
+            this.rbScrollDown = new System.Windows.Forms.RadioButton();
             this.btnCancle = new System.Windows.Forms.Button();
             this.btnOk = new System.Windows.Forms.Button();
             this.cursPos = new System.Windows.Forms.Timer(this.components);
@@ -49,126 +53,127 @@
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // lbMousePos
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("맑은 고딕", 12F);
-            this.label1.Location = new System.Drawing.Point(44, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(269, 21);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "현재 마우스 좌표 X : 0000 Y : 0000";
+            this.lbMousePos.AutoSize = true;
+            this.lbMousePos.Font = new System.Drawing.Font("맑은 고딕", 12F);
+            this.lbMousePos.Location = new System.Drawing.Point(54, 9);
+            this.lbMousePos.Name = "lbMousePos";
+            this.lbMousePos.Size = new System.Drawing.Size(269, 21);
+            this.lbMousePos.TabIndex = 0;
+            this.lbMousePos.Text = "현재 마우스 좌표 X : 0000 Y : 0000";
             // 
-            // label2
+            // lbX
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(17, 47);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(25, 15);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "X : ";
+            this.lbX.AutoSize = true;
+            this.lbX.Location = new System.Drawing.Point(17, 47);
+            this.lbX.Name = "lbX";
+            this.lbX.Size = new System.Drawing.Size(25, 15);
+            this.lbX.TabIndex = 1;
+            this.lbX.Text = "X : ";
             // 
-            // label3
+            // lbY
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(130, 47);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(25, 15);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Y : ";
+            this.lbY.AutoSize = true;
+            this.lbY.Location = new System.Drawing.Point(130, 47);
+            this.lbY.Name = "lbY";
+            this.lbY.Size = new System.Drawing.Size(25, 15);
+            this.lbY.TabIndex = 2;
+            this.lbY.Text = "Y : ";
             // 
-            // textBox1
+            // tbX
             // 
-            this.textBox1.Location = new System.Drawing.Point(48, 43);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(76, 23);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
+            this.tbX.Location = new System.Drawing.Point(48, 43);
+            this.tbX.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tbX.Name = "tbX";
+            this.tbX.Size = new System.Drawing.Size(76, 23);
+            this.tbX.TabIndex = 3;
+            this.tbX.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
-            // textBox2
+            // tbY
             // 
-            this.textBox2.Location = new System.Drawing.Point(161, 43);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(76, 23);
-            this.textBox2.TabIndex = 4;
-            this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
+            this.tbY.Location = new System.Drawing.Point(161, 43);
+            this.tbY.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tbY.Name = "tbY";
+            this.tbY.Size = new System.Drawing.Size(76, 23);
+            this.tbY.TabIndex = 4;
+            this.tbY.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
-            // button1
+            // btnCurrentPos
             // 
-            this.button1.Location = new System.Drawing.Point(243, 41);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(113, 29);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "F2로 현재 커서";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnCurrentPos.Location = new System.Drawing.Point(243, 41);
+            this.btnCurrentPos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnCurrentPos.Name = "btnCurrentPos";
+            this.btnCurrentPos.Size = new System.Drawing.Size(131, 29);
+            this.btnCurrentPos.TabIndex = 5;
+            this.btnCurrentPos.Text = "F2로 현재 커서";
+            this.btnCurrentPos.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rbLeft
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(17, 28);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(49, 19);
-            this.radioButton1.TabIndex = 6;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "왼쪽";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbLeft.AutoSize = true;
+            this.rbLeft.Location = new System.Drawing.Point(17, 23);
+            this.rbLeft.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rbLeft.Name = "rbLeft";
+            this.rbLeft.Size = new System.Drawing.Size(49, 19);
+            this.rbLeft.TabIndex = 6;
+            this.rbLeft.TabStop = true;
+            this.rbLeft.Text = "왼쪽";
+            this.rbLeft.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rbRight
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(17, 55);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(61, 19);
-            this.radioButton2.TabIndex = 7;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "오른쪽";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbRight.AutoSize = true;
+            this.rbRight.Location = new System.Drawing.Point(17, 50);
+            this.rbRight.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rbRight.Name = "rbRight";
+            this.rbRight.Size = new System.Drawing.Size(61, 19);
+            this.rbRight.TabIndex = 7;
+            this.rbRight.TabStop = true;
+            this.rbRight.Text = "오른쪽";
+            this.rbRight.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // rbDown
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(18, 23);
-            this.radioButton3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(49, 19);
-            this.radioButton3.TabIndex = 8;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "누름";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rbDown.AutoSize = true;
+            this.rbDown.Location = new System.Drawing.Point(18, 23);
+            this.rbDown.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rbDown.Name = "rbDown";
+            this.rbDown.Size = new System.Drawing.Size(49, 19);
+            this.rbDown.TabIndex = 8;
+            this.rbDown.TabStop = true;
+            this.rbDown.Text = "누름";
+            this.rbDown.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // rbUp
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(18, 50);
-            this.radioButton4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(37, 19);
-            this.radioButton4.TabIndex = 9;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "뗌";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.rbUp.AutoSize = true;
+            this.rbUp.Location = new System.Drawing.Point(18, 50);
+            this.rbUp.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rbUp.Name = "rbUp";
+            this.rbUp.Size = new System.Drawing.Size(37, 19);
+            this.rbUp.TabIndex = 9;
+            this.rbUp.TabStop = true;
+            this.rbUp.Text = "뗌";
+            this.rbUp.UseVisualStyleBackColor = true;
             // 
-            // radioButton5
+            // rbClick
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(18, 77);
-            this.radioButton5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(77, 19);
-            this.radioButton5.TabIndex = 10;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "눌렀다 뗌";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.rbClick.AutoSize = true;
+            this.rbClick.Location = new System.Drawing.Point(18, 77);
+            this.rbClick.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rbClick.Name = "rbClick";
+            this.rbClick.Size = new System.Drawing.Size(77, 19);
+            this.rbClick.TabIndex = 10;
+            this.rbClick.TabStop = true;
+            this.rbClick.Text = "눌렀다 뗌";
+            this.rbClick.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Controls.Add(this.radioButton2);
+            this.groupBox1.Controls.Add(this.rbWheel);
+            this.groupBox1.Controls.Add(this.rbLeft);
+            this.groupBox1.Controls.Add(this.rbRight);
             this.groupBox1.Location = new System.Drawing.Point(20, 86);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox1.Name = "groupBox1";
@@ -178,26 +183,74 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "마우스 종류";
             // 
+            // rbWheel
+            // 
+            this.rbWheel.AutoSize = true;
+            this.rbWheel.Location = new System.Drawing.Point(17, 77);
+            this.rbWheel.Name = "rbWheel";
+            this.rbWheel.Size = new System.Drawing.Size(37, 19);
+            this.rbWheel.TabIndex = 8;
+            this.rbWheel.TabStop = true;
+            this.rbWheel.Text = "휠";
+            this.rbWheel.UseVisualStyleBackColor = true;
+            // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.radioButton3);
-            this.groupBox2.Controls.Add(this.radioButton4);
-            this.groupBox2.Controls.Add(this.radioButton5);
+            this.groupBox2.Controls.Add(this.rbMove);
+            this.groupBox2.Controls.Add(this.rbScrollUp);
+            this.groupBox2.Controls.Add(this.rbScrollDown);
+            this.groupBox2.Controls.Add(this.rbDown);
+            this.groupBox2.Controls.Add(this.rbUp);
+            this.groupBox2.Controls.Add(this.rbClick);
             this.groupBox2.Location = new System.Drawing.Point(174, 86);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(182, 105);
+            this.groupBox2.Size = new System.Drawing.Size(200, 105);
             this.groupBox2.TabIndex = 12;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "이벤트 종류";
+            // 
+            // rbMove
+            // 
+            this.rbMove.AutoSize = true;
+            this.rbMove.Location = new System.Drawing.Point(101, 77);
+            this.rbMove.Name = "rbMove";
+            this.rbMove.Size = new System.Drawing.Size(89, 19);
+            this.rbMove.TabIndex = 13;
+            this.rbMove.TabStop = true;
+            this.rbMove.Text = "커서 움직임";
+            this.rbMove.UseVisualStyleBackColor = true;
+            // 
+            // rbScrollUp
+            // 
+            this.rbScrollUp.AutoSize = true;
+            this.rbScrollUp.Location = new System.Drawing.Point(101, 50);
+            this.rbScrollUp.Name = "rbScrollUp";
+            this.rbScrollUp.Size = new System.Drawing.Size(73, 19);
+            this.rbScrollUp.TabIndex = 12;
+            this.rbScrollUp.TabStop = true;
+            this.rbScrollUp.Text = "스크롤업";
+            this.rbScrollUp.UseVisualStyleBackColor = true;
+            // 
+            // rbScrollDown
+            // 
+            this.rbScrollDown.AutoSize = true;
+            this.rbScrollDown.Location = new System.Drawing.Point(101, 23);
+            this.rbScrollDown.Name = "rbScrollDown";
+            this.rbScrollDown.Size = new System.Drawing.Size(85, 19);
+            this.rbScrollDown.TabIndex = 11;
+            this.rbScrollDown.TabStop = true;
+            this.rbScrollDown.Text = "스크롤다운";
+            this.rbScrollDown.UseVisualStyleBackColor = true;
             // 
             // btnCancle
             // 
             this.btnCancle.Location = new System.Drawing.Point(247, 198);
             this.btnCancle.Name = "btnCancle";
-            this.btnCancle.Size = new System.Drawing.Size(109, 23);
+            this.btnCancle.Size = new System.Drawing.Size(127, 23);
             this.btnCancle.TabIndex = 14;
             this.btnCancle.Text = "취소";
             this.btnCancle.UseVisualStyleBackColor = true;
+            this.btnCancle.Click += new System.EventHandler(this.btnCancle_Click);
             // 
             // btnOk
             // 
@@ -207,6 +260,7 @@
             this.btnOk.TabIndex = 13;
             this.btnOk.Text = "완료";
             this.btnOk.UseVisualStyleBackColor = true;
+            this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
             // 
             // cursPos
             // 
@@ -217,21 +271,22 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(368, 232);
+            this.ClientSize = new System.Drawing.Size(386, 232);
             this.Controls.Add(this.btnCancle);
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnCurrentPos);
+            this.Controls.Add(this.tbY);
+            this.Controls.Add(this.tbX);
+            this.Controls.Add(this.lbY);
+            this.Controls.Add(this.lbX);
+            this.Controls.Add(this.lbMousePos);
             this.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "fMouseEvent";
-            this.Text = "fMouseEvent";
+            this.Text = "마우스 이벤트";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -243,21 +298,25 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton5;
+        private System.Windows.Forms.Label lbMousePos;
+        private System.Windows.Forms.Label lbX;
+        private System.Windows.Forms.Label lbY;
+        private System.Windows.Forms.TextBox tbX;
+        private System.Windows.Forms.TextBox tbY;
+        private System.Windows.Forms.Button btnCurrentPos;
+        private System.Windows.Forms.RadioButton rbLeft;
+        private System.Windows.Forms.RadioButton rbRight;
+        private System.Windows.Forms.RadioButton rbDown;
+        private System.Windows.Forms.RadioButton rbUp;
+        private System.Windows.Forms.RadioButton rbClick;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnCancle;
         private System.Windows.Forms.Button btnOk;
         private System.Windows.Forms.Timer cursPos;
+        private System.Windows.Forms.RadioButton rbWheel;
+        private System.Windows.Forms.RadioButton rbMove;
+        private System.Windows.Forms.RadioButton rbScrollUp;
+        private System.Windows.Forms.RadioButton rbScrollDown;
     }
 }
